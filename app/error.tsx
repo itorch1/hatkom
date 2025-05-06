@@ -5,10 +5,8 @@ import Button from "./_components/Button";
 
 export default function Error({
   error,
-  reset,
 }: {
   error: Error;
-  reset: () => void;
 }) {
   const router = useRouter();
 
