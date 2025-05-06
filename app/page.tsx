@@ -8,7 +8,7 @@ import PostSkeleton from "./_components/PostSkeleton";
 async function Page({
   searchParams,
 }: {
-  searchParams: { page?: string; query?: string };
+  searchParams: { page?: string | undefined; query?: string | undefined };
 }) {
   const page = Number(searchParams.page) || 1;
   const query = searchParams.query?.toLowerCase() || "";
